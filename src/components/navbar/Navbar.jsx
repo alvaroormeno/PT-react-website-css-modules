@@ -1,9 +1,34 @@
 import React from 'react'
-import styles from '..Navbar.module.css'
+import styles from './Navbar.module.css'
+import {AiOutlineMenu, AiOutlineClose, AiOutlineSearch, AiOutlineUser } from 'react-icons/ai'
+import Logo from '../../images/logo.png'
 
 function Navbar() {
   return (
-    <div>Navbar</div>
+    <header className='{styles.navbar}'>
+      <img src={Logo} alt="logo img" />
+
+      <nav>
+        <ul className={styles.menu}>
+          <li>
+            <a href="/">Learn More</a>
+          </li>
+          <li>
+            <a href="/">Log in</a>
+          </li>
+          <li>
+            <a href="/">Sign up</a>
+          </li>
+          <li>
+            <AiOutlineSearch/>
+          </li>
+          <li>
+            <AiOutlineUser/>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
   )
 }
 

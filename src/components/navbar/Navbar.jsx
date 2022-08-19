@@ -5,7 +5,7 @@ import Logo from '../../images/logo.png'
 
 function Navbar() {
   return (
-    <header className='{styles.navbar}'>
+    <header className={styles.navbar}>
       <img src={Logo} alt="logo img" />
 
       <nav>
@@ -20,13 +20,16 @@ function Navbar() {
             <a href="/">Sign up</a>
           </li>
           <li>
-            <AiOutlineSearch/>
+            <AiOutlineSearch size={25} style={{marginTop: '6px'}}/>
           </li>
           <li>
-            <AiOutlineUser/>
+            <AiOutlineUser size={25} style={{marginTop: '6px'}}/>
           </li>
         </ul>
       </nav>
+      <div className={styles.mobile_btn}>
+        <AiOutlineMenu size={25}/>
+      </div>
 
     </header>
   )

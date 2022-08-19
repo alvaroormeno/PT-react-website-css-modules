@@ -4,7 +4,7 @@ import Drive from '../../images/drive.png'
 
 function Driver() {
   return (
-    <div className={styles.drive}>
+    <div className={styles.driver}>
       <div className={styles.left}>
         <img src={Drive} alt="person driving" />
       </div>

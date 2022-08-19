@@ -21,8 +21,8 @@ function Hero() {
           <input type="date" />
         </div>
         <div className={styles.search_btn}>
-          <AiOutlineSearch/>
-          <button>Search for Cars</button>
+          <AiOutlineSearch className={styles.icon}/>
+          <button className={styles.btn}>Search for Cars</button>
         </div>
       </form>
     </div>

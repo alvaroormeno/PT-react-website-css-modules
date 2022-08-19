@@ -50,6 +50,65 @@ form .text_input {
   align-items: center;
 }
 
-.search_btn button {
+.search_btn .btn {
   display: none;
+}
+
+@media screen and (max-width: 720px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto 1rem;
+  }
+
+  .text, .from, .until {
+    width: 100%;
+    padding: .2rem;
+  }
+
+  .from, .until {
+    border-left: none;
+  }
+
+  .text_input {
+    font-size: .8rem;
+  }
+
+  .border {
+    border-top: 1px solid #333;
+    pad: 8px;
+  }
+
+  form label {
+    padding: .4rem 0;
+  }
+
+  .search_btn {
+    width: 100%;
+    border-top: 1px solid #333;
+    padding: 8px 0;
+  }
+
+  .search_btn .btn {
+    display: block;
+    background-color: #593cfb;
+    color: white;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    padding: 12px;
+    margin: .5rem 0;
+    cursor: pointer;
+  }
+
+  .search_btn .btn:hover {
+    background-color: #4733b7;
+    transition: background-color 1s;
+  }
+
+  .icon {
+    display: none;
+  }
 }
